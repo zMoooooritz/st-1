@@ -1318,7 +1318,7 @@ xinit(int cols, int rows)
 	XFillRectangle(xw.dpy, xw.buf, dc.gc, 0, 0, win.w, win.h);
 
 	/* font spec buffer */
-	xw.specbuf = xmalloc(cols * sizeof(GlyphFontSpec));
+	/* xw.specbuf = xmalloc(cols * sizeof(GlyphFontSpec)); */
 
 	/* Xft rendering context */
 	xw.draw = XftDrawCreate(xw.dpy, xw.buf, xw.vis, xw.cmap);
